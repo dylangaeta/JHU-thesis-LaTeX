@@ -1,11 +1,11 @@
-# (unofficial) Johns Hopkins University PhD Dissertation/Thesis Template for LaTeX/Overleaf 
+# (unofficial) Johns Hopkins University PhD Dissertation/MS Thesis Template for LaTeX/Overleaf 
 ## Author: Dylan C. Gaeta (2025)
 
-A complete LaTeX template for PhD dissertations and M.S. theses that meets Johns Hopkins University Sheridan Libraries formatting requirements (as of August 2025).
+An easily customizable LaTeX template for PhD dissertations and M.S. theses (or GBO/DQE/thesis proposals) that meets Johns Hopkins University Sheridan Libraries formatting requirements.
 
 ## Overview
 
-This template provides a structured, modular approach to dissertation writing with compliance to JHU formatting standards as of August 2025.  
+This template provides a structured, modular approach to dissertation writing in LaTeX/Overleaf with compliance to JHU formatting standards as of the Fall 2025 term.  
 
 ## Getting Started
 
@@ -16,12 +16,12 @@ This template provides a structured, modular approach to dissertation writing wi
 1. **Download ZIP from GitHub:**
    - Click the green "Code" button above
    - Select "Download ZIP"
-   - Save `HopkinsDissertation-main.zip` to your computer
+   - Save `JHU-thesis-LaTeX-main.zip` to your computer
 
 2. **Upload to Overleaf:**
    - Go to [Overleaf.com](https://www.overleaf.com/)
    - Click "New Project" → "Upload Project"
-   - Select the downloaded `HopkinsDissertation-main.zip` file
+   - Select the downloaded `JHU-thesis-LaTeX-main.zip` file
    - Overleaf will automatically extract and set up your project
 
 3. **Start editing:**
@@ -58,7 +58,9 @@ This template provides a structured, modular approach to dissertation writing wi
    pdflatex main.tex
    ```
 
-### Template Structure
+**Note:** These commands are for compiling LaTeX on your local device. You do NOT need to do this if you use Overleaf. 
+
+## Template Structure
 
 ```
 HopkinsDissertation/
@@ -92,7 +94,7 @@ HopkinsDissertation/
 ## Key Features
 
 ### JHU Compliance
-- **Frontmatter Order**: Title page → Abstract → Dedication/Acknowledgments (Preface) → Table of Contents → Lists
+- **Frontmatter Order**: Title page → Abstract → Readers → Dedication/Acknowledgments (Preface) → Table of Contents → Lists of Figures/Tables 
 - **Page Numbering**: Roman numerals for frontmatter, Arabic for main text, centered at bottom
 - **Margins**: 1 inch on all sides
 - **Font**: Compatible with both serif and sans serif fonts
