@@ -1,15 +1,13 @@
 # (unofficial) Johns Hopkins University PhD Dissertation/MS Thesis Template for LaTeX/Overleaf 
 ## Author: Dylan C. Gaeta (2025)
 
-An easily customizable LaTeX template for PhD dissertations and M.S. theses (or GBO/DQE/thesis proposals) that meets Johns Hopkins University Sheridan Libraries formatting requirements.
-
 ## Overview
 
-This template provides a structured, modular approach to dissertation writing in LaTeX/Overleaf with compliance to JHU formatting standards as of the Fall 2025 term.  
+An easily customizable LaTeX template for PhD dissertations and M.S. theses (or GBO/DQE/thesis proposals) that meets Johns Hopkins University Sheridan Libraries formatting requirements. This template provides a structured, modular approach to dissertation writing in LaTeX/Overleaf with compliance to JHU formatting standards as of the Fall 2025 term.  
 
 ## Getting Started
 
-### Option 1: Use with Overleaf (RECOMMENDED)
+### Option 1: Use with Overleaf 🌱 (RECOMMENDED)
 
 **Overleaf requires a ZIP file upload. Here's the easiest way:**
 
@@ -31,7 +29,7 @@ This template provides a structured, modular approach to dissertation writing in
 
 **Note:** Overleaf automatically handles LaTeX compilation, so you don't need to run manual commands.
 
-### Option 2: Download for Local Use
+### Option 2: Download for Local Use 💻 
 
 1. **Download the template:**
    - Click the green "Code" button → "Download ZIP"
@@ -39,18 +37,19 @@ This template provides a structured, modular approach to dissertation writing in
 
 2. **Edit core files:**
    - `frontmatter/cover.tex`: Title, author, degree, and date
-   - `frontmatter/abstract.tex`: Your abstract 
-   - `frontmatter/dedication.tex`: Your dedication
+   - `frontmatter/abstract.tex`: Your abstract
+   - `frontmatter/readers.tex`: Your readers/committee 
    - `frontmatter/acknowledgments.tex`: Your acknowledgments
+   - `frontmatter/dedication.tex`: Your dedication
 
 3. **Add your content:**
    - `introduction/introduction.tex`: Introduction chapter
    - `chapter*/chapter*.tex`: Main chapters (currently 3 provided)
    - `conclusion/conclusion.tex`: Conclusions chapter
-   - `appendix/appendix*/appendix*.tex`: Appendices
+   - `appendix/appendix*/appendix*.tex`: Appendices (currently 3 provided)
    - `backmatter/dissertation.bib`: Bibliography entries
 
-4. **Compile:**
+4. **Compile:** 
    ```bash
    pdflatex main.tex
    bibtex main
