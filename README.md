@@ -63,15 +63,15 @@ An easily customizable LaTeX template for PhD dissertations and M.S. theses (or 
 
 ```
 HopkinsDissertation/
-├── main.tex                    # Main document orchestrator
+├── main.tex                   # Main document orchestrator
 ├── preamble.sty               # All formatting & package definitions
 ├── figures/                   # Image files (beach.jpg, hospital.jpg, etc.)
 ├── frontmatter/
-│   ├── cover.tex             # Title page
-│   ├── abstract.tex          # Abstract (≤350 words) 
-│   ├── dedication.tex      # Dedication page (optional)
-│   ├── acknowledgments.tex   # Acknowledgments page (optional) 
-│   ├── readers.tex         # Thesis/reading committee (optional)
+│   ├── cover.tex              # Title page
+│   ├── abstract.tex           # Abstract (≤350 words) 
+│   ├── readers.tex            # Thesis/reading committee (optional)
+│   ├── acknowledgments.tex    # Acknowledgments page (optional) 
+│   ├── dedication.tex         # Dedication page (optional)
 │   └── toc.tex                # Table of contents generation
 ├── introduction/
 │   └── introduction.tex      # Introduction chapter
