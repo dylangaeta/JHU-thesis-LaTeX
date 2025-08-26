@@ -90,7 +90,7 @@ JHU-thesis-LaTeX/
 │   └── references.tex         # References chapter
 │   ├── appendix/
 │   │   ├── appendixA/appendixA.tex
-│   │   └── appendixB/appendixB.tex
+│   │   ├── appendixB/appendixB.tex
 │   │   └── appendixC/appendixC.tex
 │   ├── dissertation.bib       # Bibliography database
 │   └── cv.pdf                 # CV (optional) 
