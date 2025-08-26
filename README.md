@@ -5,7 +5,7 @@ A complete LaTeX template for PhD dissertations and M.S. theses that meets Johns
 
 ## Overview
 
-This template provides a structured, modular approach to dissertation writing with compliance to JHU formatting standards, including PDF/A compliance via Overleaf. 
+This template provides a structured, modular approach to dissertation writing with compliance to JHU formatting standards as of August 2025.  
 
 ## Getting Started
 
@@ -58,7 +58,7 @@ This template provides a structured, modular approach to dissertation writing wi
    pdflatex main.tex
    ```
 
-## Template Structure
+### Template Structure
 
 ```
 HopkinsDissertation/
@@ -67,11 +67,11 @@ HopkinsDissertation/
 ├── figures/                   # Image files (beach.jpg, hospital.jpg, etc.)
 ├── frontmatter/
 │   ├── cover.tex             # Title page
-│   ├── abstract.tex          # Abstract (≤350 words)
-│   ├── dedication.tex        # Dedication page
-│   ├── acknowledgments.tex   # Acknowledgments page
-│   ├── committee.tex         # Thesis committee (optional)
-│   └── toc.tex              # Table of contents generation
+│   ├── abstract.tex          # Abstract (≤350 words) 
+│   ├── dedication.tex      # Dedication page (optional)
+│   ├── acknowledgments.tex   # Acknowledgments page (optional) 
+│   ├── readers.tex         # Thesis/reading committee (optional)
+│   └── toc.tex                # Table of contents generation
 ├── introduction/
 │   └── introduction.tex      # Introduction chapter
 ├── chapter1/, chapter2/, chapter3/
@@ -81,8 +81,9 @@ HopkinsDissertation/
 ├── references/
 │   └── references.tex       # Unified References chapter
 ├── appendix/
-│   ├── appendix1/appendix1.tex
-│   └── appendix2/appendix2.tex
+│   ├── appendixA/appendixA.tex
+│   └── appendixB/appendixB.tex
+│   └── appendixC/appendixC.tex
 └── backmatter/
     ├── dissertation.bib     # Bibliography database
     └── cv.pdf              # Optional CV
@@ -107,7 +108,7 @@ HopkinsDissertation/
 
 ## Johns Hopkins University Formatting Requirements (August 2025)
 
-Based on official requirements from [JHU Sheridan Libraries](https://www.library.jhu.edu/library-services/electronic-theses-dissertations/formatting-requirements/):
+Based on official requirements from [https://www.library.jhu.edu/library-services/electronic-theses-dissertations/formatting-requirements/](https://www.library.jhu.edu/library-services/electronic-theses-dissertations/formatting-requirements/):
 
 ### Title Page Requirements
 - ✅ Content centered within margins
@@ -175,7 +176,7 @@ Edit the bibliography section in `references/references.tex` to change citation 
 
 For JHU-specific formatting questions, consult:
 - [JHU Sheridan Libraries ETD Guidelines](https://www.library.jhu.edu/library-services/electronic-theses-dissertations/formatting-requirements/)
-- [JHU Graduate Board Requirements](https://graduate.jhu.edu/dissertation/)
+- [JHU Homewood Graduate Board Requirements](https://homewoodgrad.jhu.edu/graduate-board/)
 
 For LaTeX technical issues, refer to comprehensive LaTeX documentation or TeX Stack Exchange.
 

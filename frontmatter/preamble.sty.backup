@@ -1,0 +1,101 @@
+% Fonts and language
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{lmodern}
+%\usepackage{helvet}
+%\renewcommand{\familydefault}{\sfdefault}
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{mathrsfs}
+\usepackage{enumitem} 
+
+% Page formatting
+\usepackage{geometry}
+\geometry{margin=1in}
+\usepackage{setspace}
+\usepackage{float}
+\usepackage{placeins}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\thepage} 
+
+\usepackage{graphicx}
+\usepackage[labelfont=bf]{caption}
+\usepackage{subcaption}
+\usepackage{comment}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{rotating}
+\usepackage{booktabs}
+\usepackage{soul}
+\usepackage{tikz}
+\usepackage{xcolor}
+\usepackage[a-1b]{pdfx}
+\usepackage{pdfpages} 
+\usepackage{hyperref}
+
+% Table of Contents
+\usepackage{tocbibind}
+\usepackage{tocloft}
+\setlength{\cftfignumwidth}{6em}
+\setlength{\cfttabnumwidth}{6em}
+
+% Labels
+\renewcommand{\thechapter}{\arabic{chapter}}
+\renewcommand{\thefigure}{Figure~\arabic{chapter}.\arabic{figure}}
+\captionsetup[figure]{labelformat=simple, labelsep=space, name={}}
+\renewcommand{\thetable}{Table~\arabic{chapter}.\arabic{table}}
+\captionsetup[table]{labelformat=simple, labelsep=space, name={}}
+\renewcommand{\theequation}{Equation~\arabic{chapter}.\arabic{equation}}
+
+\hypersetup{
+    colorlinks=true,
+    citecolor=blue,
+    linkcolor=blue,
+    filecolor=blue,
+    urlcolor=blue
+}
+
+% Bibliography
+\usepackage[square,numbers]{natbib} 
+\bibliographystyle{siam} 
+
+% Graphics paths - add directories as needed
+% For additional chapters/appendices, add their paths here
+\makeatletter
+\def\input@path{%
+    {./}%
+    {figures/}%
+    {introduction/}%
+    {chapter1/}%
+    {chapter2/}%
+    {chapter3/}%
+    {chapter4/}%
+    {chapter5/}%
+    {conclusion/}%
+    {appendix/}%
+    {appendix/appendix1/}%
+    {appendix/appendix2/}%
+    {appendix/appendix3/}%
+}
+\graphicspath{%
+    {./}%
+    {figures/}%
+    {introduction/}%
+    {chapter1/}%
+    {chapter2/}%
+    {chapter3/}%
+    {chapter4/}%
+    {chapter5/}%
+    {conclusion/}%
+    {appendix/}%
+    {appendix/appendix1/}%
+    {appendix/appendix2/}%
+    {appendix/appendix3/}%
+}
+\makeatother
