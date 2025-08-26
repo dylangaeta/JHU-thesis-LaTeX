@@ -14,8 +14,11 @@
 \usepackage{enumitem} 
 
 % Page formatting
-\usepackage{geometry}
-\geometry{margin=1in}
+% Digital option - default (1 inch margins)
+\usepackage[margin=1in]{geometry}
+% Print option - (1.5 inch left margin for print binding)
+%\usepackage[top=1in, bottom=1in, left=1.5in, right=1in]{geometry}
+
 \usepackage{setspace}
 \usepackage{float}
 \usepackage{placeins}
@@ -35,7 +38,7 @@
 \usepackage{soul}
 \usepackage{tikz}
 \usepackage{xcolor}
-\usepackage[a-1b]{pdfx}
+\usepackage[a-1b]{pdfx} % PDF/A compliance 
 \usepackage{pdfpages} 
 \usepackage{hyperref}
 
