@@ -4,27 +4,27 @@
 \begin{document}
 
 % Front matter
-\pagenumbering{roman}
-\input{frontmatter/cover}
+\pagenumbering{roman} % Start page i 
+\input{frontmatter/cover} % Cover Page 
 \clearpage
-\setcounter{page}{2} % page i is the Title Page 
-\input{frontmatter/abstract}
+\setcounter{page}{2} % include Cover in page numbering  
+\input{frontmatter/abstract} % Abstract 
 \clearpage
-\input{frontmatter/readers}
+\input{frontmatter/readers} % Readers/Committee Members 
 \clearpage
-\input{frontmatter/acknowledgments}
+\input{frontmatter/acknowledgments} % Acknowledgements 
 \clearpage
-\input{frontmatter/dedication}
+\input{frontmatter/dedication} % Dedication 
 \clearpage
-\input{frontmatter/toc}
+\input{frontmatter/toc} % Table of Contents 
 \clearpage
-\listoffigures
+\listoffigures % List of Figures 
 \clearpage
-\listoftables 
+\listoftables % List of Tables 
 \clearpage
 
 % Main content
-\pagenumbering{arabic}
+\pagenumbering{arabic} % Start Arabic page numbering: 1, 2, 3, ... 
 \doublespacing
 
 \input{introduction/introduction}
@@ -35,9 +35,14 @@
 \clearpage
 \input{chapter3/chapter3}
 \clearpage
+% Input more chapters here if needed 
 \input{conclusion/conclusion}
 \clearpage
 
+% Back matter (includes Appendices and Bibliography)
 \input{references/references}
+
+% Optional: Include CV (with continuous page numbering) 
+%\includepdf[pages=-]{cv.pdf} 
 
 \end{document}
