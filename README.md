@@ -1,9 +1,10 @@
 # (unofficial) Johns Hopkins University PhD Dissertation/MS Thesis Template for LaTeX/Overleaf 
-## Author: Dylan C. Gaeta (2025)
+### Author: Dylan C. Gaeta (2025)
 
 ## Overview
 
-An easily customizable LaTeX template for PhD dissertations and M.S. theses (or GBO/DQE/thesis proposals) that meets Johns Hopkins University Sheridan Libraries formatting requirements. This template provides a structured, modular approach to dissertation writing in LaTeX/Overleaf with compliance to JHU formatting standards as of the Fall 2025 term.  
+An easily customizable LaTeX template for PhD dissertations and M.S. theses (or GBO/DQE/thesis proposals) that meets Johns Hopkins University Sheridan Libraries formatting requirements. 
+This template provides a structured, modular approach to dissertation writing in LaTeX/Overleaf with compliance to JHU formatting standards as of the Fall 2025 term.  
 
 ## Getting Started
 
@@ -56,16 +57,22 @@ An easily customizable LaTeX template for PhD dissertations and M.S. theses (or 
    pdflatex main.tex  
    pdflatex main.tex
    ```
+## Compilation Notes
 
-**Note:** These commands are for compiling LaTeX on your local device. You do NOT need to do this if you use Overleaf. 
+- Use `pdflatex` for best PDF/A compatibility
+- Run `bibtex` between LaTeX runs for bibliography updates
+- Three LaTeX runs typically needed for cross-references and TOC
+- Ensure all `.tex` files are UTF-8 encoded
+  
+**Note:** These commands are for compiling LaTeX on your local device. You do NOT need to worry about this if you use Overleaf. 
 
 ## Template Structure
 
 ```
-HopkinsDissertation/
+JHU-thesis-LaTeX/
 ├── main.tex                   # Main document orchestrator
 ├── preamble.sty               # All formatting & package definitions
-├── figures/                   # Image files (beach.jpg, hospital.jpg, etc.)
+├── figures/                   # Image files (clock.jpg, beach.jpg, hospital.jpg, etc.)
 ├── frontmatter/
 │   ├── cover.tex              # Title page
 │   ├── abstract.tex           # Abstract (≤350 words) 
@@ -74,20 +81,19 @@ HopkinsDissertation/
 │   ├── dedication.tex         # Dedication page (optional)
 │   └── toc.tex                # Table of contents generation
 ├── introduction/
-│   └── introduction.tex      # Introduction chapter
+│   └── introduction.tex       # Introduction chapter
 ├── chapter1/, chapter2/, chapter3/
-│   └── chapter*.tex         # Main content chapters
+│   └── chapter*.tex           # Main content chapters
 ├── conclusion/
-│   └── conclusion.tex       # Conclusions chapter
-├── references/
-│   └── references.tex       # Unified References chapter
-├── appendix/
-│   ├── appendixA/appendixA.tex
-│   └── appendixB/appendixB.tex
-│   └── appendixC/appendixC.tex
-└── backmatter/
-    ├── dissertation.bib     # Bibliography database
-    └── cv.pdf              # Optional CV
+│   └── conclusion.tex         # Conclusions chapter
+├── backmatter/
+│   └── references.tex         # References chapter
+│   ├── appendix/
+│   │   ├── appendixA/appendixA.tex
+│   │   └── appendixB/appendixB.tex
+│   │   └── appendixC/appendixC.tex
+│   ├── dissertation.bib       # Bibliography database
+│   └── cv.pdf                 # CV (optional) 
 ```
 
 ## Key Features
@@ -95,7 +101,7 @@ HopkinsDissertation/
 ### JHU Compliance
 - **Frontmatter Order**: Title page → Abstract → Readers → Dedication/Acknowledgments (Preface) → Table of Contents → Lists of Figures/Tables 
 - **Page Numbering**: Roman numerals for frontmatter, Arabic for main text, centered at bottom
-- **Margins**: 1 inch on all sides
+- **Margins**: 1 inch on all sides (option for 1.5 inch left margins for physical print copy submission) 
 - **Font**: Compatible with both serif and sans serif fonts
 - **Spacing**: Double-spaced main text and abstract
 - **References Structure**: Unified chapter containing appendices and bibliography
@@ -165,13 +171,6 @@ To use sans serif fonts (JHU recommended), modify `preamble.sty`:
 
 ### Modifying Bibliography Style
 Edit the bibliography section in `references/references.tex` to change citation styles or add multiple bibliographies.
-
-## Compilation Notes
-
-- Use `pdflatex` for best PDF/A compatibility
-- Run `bibtex` between LaTeX runs for bibliography updates
-- Three LaTeX runs typically needed for cross-references and TOC
-- Ensure all `.tex` files are UTF-8 encoded
 
 ## Support
 
