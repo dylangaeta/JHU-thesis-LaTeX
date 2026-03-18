@@ -1,77 +1,102 @@
+% ================================
+% PDF/A COMPLIANCE (MUST BE FIRST)
+% ================================
+% Load xcolor before pdfx for PDF/A compatibility
+\usepackage[table,dvipsnames]{xcolor}
+\PassOptionsToPackage{utf8}{inputenc}
+% Suppress known harmless warnings from pdfx/xcolor interaction:
+%   - xcolor: pdfx passes obsolete 'hyperref' option to already-loaded xcolor
+%   - pdfx: informational note about enforcing RGB color model for PDF/A-1b
+\usepackage{silence}
+\WarningFilter{xcolor}{Package option}
+\WarningFilter{pdfx}{Setting all color commands to rgb}
+\WarningFilter{pdfx}{Color Model}
+\usepackage[a-1b]{pdfx}
+
+% ================================
 % Fonts and language
-\usepackage[utf8]{inputenc}
+% ================================
 \usepackage[T1]{fontenc}
 \usepackage[english]{babel}
 \usepackage{lmodern}
-%\usepackage{helvet}
-%\renewcommand{\familydefault}{\sfdefault}
+
 \usepackage{mathtools}
 \usepackage{amssymb}
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amsthm}
 \usepackage{mathrsfs}
-\usepackage{enumitem} 
+\usepackage{enumitem}
 
+% ================================
 % Page formatting
-% Digital option - default (1 inch margins)
+% ================================
 \usepackage[margin=1in]{geometry}
-% Print option - (1.5 inch left margin for print binding)
-%\usepackage[top=1in, bottom=1in, left=1.5in, right=1in]{geometry}
-
 \usepackage{setspace}
 \usepackage{float}
 \usepackage{placeins}
+
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 \fancyhf{}
-\fancyfoot[C]{\thepage} 
+\fancyfoot[C]{\thepage}
 
+% ================================
+% Graphics and floats
+% ================================
 \usepackage{graphicx}
-\usepackage[labelfont=bf]{caption}
+\usepackage{caption}
 \usepackage{subcaption}
-\usepackage{comment}
 \usepackage{multicol}
 \usepackage{multirow}
 \usepackage{rotating}
 \usepackage{booktabs}
-\usepackage{soul}
-\usepackage{tikz}
-\usepackage{xcolor}
-\usepackage[a-1b]{pdfx} % PDF/A compliance 
-\usepackage{pdfpages} 
-\usepackage{hyperref}
+
+% ================================
+% Color and URLs
+% ================================
+% xcolor and hyperref are loaded above via pdfx
 \usepackage{url}
 
-% Table of Contents
+\hypersetup{
+      colorlinks=true,
+      linkcolor=black,
+      citecolor=blue,
+      filecolor=blue,
+      urlcolor=blue
+  }
+
+% ================================
+% TOC / Lists
+% ================================
 \usepackage{tocbibind}
 \usepackage{tocloft}
 \setlength{\cftfignumwidth}{6em}
 \setlength{\cfttabnumwidth}{6em}
 
-
-% Labels
+% ================================
+% Labels and numbering
+% ================================
 \renewcommand{\thechapter}{\arabic{chapter}}
+
 \renewcommand{\thefigure}{Figure~\arabic{chapter}.\arabic{figure}}
 \captionsetup[figure]{labelformat=simple, labelsep=space, name={}}
+
 \renewcommand{\thetable}{Table~\arabic{chapter}.\arabic{table}}
 \captionsetup[table]{labelformat=simple, labelsep=space, name={}}
+
 \renewcommand{\theequation}{Equation~\arabic{chapter}.\arabic{equation}}
 
-\hypersetup{
-    colorlinks=true,
-    citecolor=blue,
-    linkcolor=blue,
-    filecolor=blue,
-    urlcolor=blue
-}
-
+% ================================
 % Bibliography
-\usepackage[square,numbers]{natbib} 
-\bibliographystyle{siam} 
+% ================================
+%\usepackage[authoryear]{natbib}
+\usepackage[square,numbers]{natbib}
+\bibliographystyle{abbrvnat}
 
-% Graphics paths - add directories as needed
-% For additional chapters/appendices, add their paths here
+% ================================
+% Input paths
+% ================================
 \makeatletter
 \def\input@path{%
     {./}%
@@ -88,27 +113,18 @@
     {appendix/appendixB/}%
     {appendix/appendixC/}%
 }
+
 \graphicspath{%
     {./}%
     {figures/}%
     {introduction/}%
-    {chapter1/}%
     {chapter1/figures/}%
-    {chapter2/}%
     {chapter2/figures/}%
-    {chapter3/}%
     {chapter3/figures/}%
-    {chapter4/}%
     {chapter4/figures/}%
-    {chapter5/}%
     {chapter5/figures/}%
-    {conclusion/}%
-    {appendix/}%
-    {appendix/appendixA/}%
     {appendix/appendixA/figures/}%
-    {appendix/appendixB/}%
     {appendix/appendixB/figures/}%
-    {appendix/appendixC/}%
     {appendix/appendixC/figures/}%
 }
 \makeatother

@@ -1,4 +1,6 @@
 \documentclass[12pt]{report}
+
+% All packages and formatting defined in preamble.sty
 \usepackage{preamble}
 
 \begin{document}
@@ -14,7 +16,7 @@
 \clearpage
 \input{frontmatter/acknowledgments} % Acknowledgements 
 \clearpage
-\input{frontmatter/dedication} % Dedication 
+\input{frontmatter/quote} % Quotation (Optional)  
 \clearpage
 \input{frontmatter/toc} % Table of Contents 
 \clearpage
@@ -43,8 +45,6 @@
 \input{backmatter/references}
 
 % Optional: Include CV (with continuous page numbering) 
-%\chapter*{Curriculum Vitae (CV)} 
-%\addcontentsline{toc}{chapter}{Curriculum Vitae (CV)} 
 %\includepdf[pages=-]{cv.pdf} 
 
 \end{document}
