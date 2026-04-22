@@ -4,7 +4,7 @@
 ## Overview
 
 An easily customizable LaTeX template for PhD dissertations and M.S. theses (or GBO/DQE/thesis proposals) that meets Johns Hopkins University Sheridan Libraries formatting requirements.
-This template provides a structured, modular approach to dissertation writing in LaTeX/Overleaf with compliance to JHU formatting standards as of the Fall 2025 term.
+This template provides a structured, modular approach to dissertation writing in LaTeX/Overleaf with compliance to JHU formatting standards as of the Spring 2026 term.
 
 ## Getting Started
 
